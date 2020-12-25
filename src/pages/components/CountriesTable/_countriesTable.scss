@@ -1,0 +1,53 @@
+.CountriesTable {
+   button {
+      border: none;
+      background-color: transparent;
+   }
+}
+
+._countriesTable-heading {
+   display: flex;
+   color: $text-color-secondary;
+}
+
+._countriesTable-name,
+._countriesTable-population_name {
+   flex: 1;
+   padding: 20px;
+   font-weight: 500;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+._countriesTable-name {
+   justify-content: flex-start;
+}
+
+._countriesTable-row {
+   display: flex;
+   padding: 20px;
+   text-align: center;
+   background-color: $background-color-light;
+   border-radius: 8px;
+   margin-bottom: 16px;
+   box-shadow: $box-shadow;
+   transition: transform 200ms ease-in-out;
+
+   &:hover {
+      transform: translateY(-4px);
+   }
+}
+
+._countriesTable-name,
+._countriesTable-population {
+   flex: 1;
+}
+._countriesTable-population {
+   margin: auto;
+}
+
+._countriesTable-name {
+   text-align: left;
+}
